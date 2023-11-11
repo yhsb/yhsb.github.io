@@ -7,7 +7,14 @@
  }
  .center {
 	text-align: center;
+	displat:flex;
+	justify-content: space-between;
 }
 .title {
 	text-align: center;
+}
+.music {
+	float: left;
+	width: 0px;
+	padding: 10px;
 }
