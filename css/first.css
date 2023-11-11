@@ -1,3 +1,13 @@
-.center {  
-  text-align: center;  
-} 
+ a {
+	 color:blue;
+	 text-decoration:none;
+ }
+ a:hover{
+	 color:red;
+ }
+ .center {
+	text-align: center;
+}
+.title {
+	text-align: center;
+}
