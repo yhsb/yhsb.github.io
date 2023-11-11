@@ -36,8 +36,8 @@ window.addEventListener('load',()=>{
     function star(x,y,r,l,rot){
        ctx.beginPath();
         for(let i=0;i<5;i++){         
-           ctx.lineTo(Math.cos((18 + i*72 -rot)*Math.PI/180)*r+x,
-           -Math.sin((18 + i*72 - rot)*Math.PI/180)*r+y);          
+           ctx.lineTo(Math.cos((18 + i*72)*Math.PI/180)*r+x,
+           -Math.sin((18 + i*72)*Math.PI/180)*r+y);          
         }
         ctx.closePath();   
     }
