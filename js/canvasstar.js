@@ -36,8 +36,8 @@ window.addEventListener('load',()=>{
     function star(x,y,r,l,rot){
        ctx.beginPath();
         for(let i=0;i<5;i++){         
-           ctx.lineTo(Math.cos((18 + i*72)*Math.PI/180)*r+x,
-           -Math.sin((18 + i*72)*Math.PI/180)*r+y);          
+           ctx.lineTo(Math.cos((18 + i*72 -rot)*Math.PI/180)*r+x,
+           -Math.sin((18 + i*72 - rot)*Math.PI/180)*r+y);          
         }
         ctx.closePath();   
     }
@@ -48,7 +48,7 @@ window.addEventListener('load',()=>{
             star(temp.x,temp.y,temp.r,temp.r*3,temp.rot);
             ctx.fillStyle = temp.color;
             ctx.strokeStyle = temp.color;
-            ctx.lineWidth = 0.1;
+            ctx.lineWidth = 0.9;
             ctx.lineJoin = "round";
             ctx.fill();
             ctx.stroke();
